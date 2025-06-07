@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<!-- saved from url=(0068)file:///C:/Users/Kaviya%20Ravichandran/Downloads/podcast/index1.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <title>Explore the World</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="./kaviya.webpage_files/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color:  #f0f8ff;
+    }
+    .hero {
+      background: url('https://source.unsplash.com/1600x600/?travel,landscape') no-repeat center center/cover;
+      height: 60vh;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-shadow: 2px 2px 5px #000;
+    }
+    .hero h1 {
+      font-size: 3rem;
+    }
+    .destination-card img {
+      height: 200px;
+      object-fit: cover;
+    }
+    .destination-card:hover {
+      transform: scale(1.02);
+      transition: 0.3s;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+    footer {
+      background-color: #0000ff;
+      color:black;
+      padding: 20px 0;
+      text-align: center;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body class="" style="">
+
+<!-- Hero Section -->
+<section class="hero text-center">
+  <div>
+    <h1>Discover Beautiful Destinations</h1>
+    <p>Plan your perfect trip with us</p>
+  </div>
+</section>
+
+<!-- Destinations -->
+<section class="container mt-5">
+  <h2 class="text-center mb-4">Popular Destinations</h2>
+  <div class="row">
+    <!-- Paris -->
+    <div class="col-md-4 mb-4">
+      <div class="card destination-card" data-bs-toggle="modal" data-bs-target="#parisModal">
+        <img src="./kaviya.webpage_files/images" class="card-img-top" alt="Paris">
+        <div class="card-body">
+          <h5 class="card-title">Paris</h5>
+          <p class="card-text">The city of lights and love. Visit the Eiffel Tower, museums, and cafes.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Maldives -->
+    <div class="col-md-4 mb-4">
+      <div class="card destination-card" data-bs-toggle="modal" data-bs-target="#maldivesModal">
+        <img src="data:image/jpeg;base64,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" class="card-img-top" alt="Maldives">
+        <div class="card-body">
+          <h5 class="card-title">Maldives</h5>
+          <p class="card-text">Enjoy the tropical paradise with crystal-clear water and luxury resorts.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Switzerland -->
+    <div class="col-md-4 mb-4">
+      <div class="card destination-card" data-bs-toggle="modal" data-bs-target="#swissModal">
+        <img src="./kaviya.webpage_files/images(1)" class="card-img-top" alt="Switzerland">
+        <div class="card-body">
+          <h5 class="card-title">Switzerland</h5>
+          <p class="card-text">Snowy mountains, scenic trains, and chocolate – a perfect holiday escape.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Travel Video -->
+<section class="container mt-5">
+  <h2 class="text-center mb-4">Travel Vibes</h2>
+  <div class="ratio ratio-16x9">
+    <iframe src="./kaviya.webpage_files/uw8hjVqxMXw.html" title="Tourism Video" allowfullscreen=""></iframe>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>© 2025 Explore the World | Designed by R. Kaviya</p>
+</footer>
+
+<!-- MODALS -->
+
+<!-- Paris Modal -->
+<div class="modal fade" id="parisModal" tabindex="-1" aria-labelledby="parisModalLabel" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog modal-lg modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Explore Paris</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img src="./kaviya.webpage_files/saved_resource" class="img-fluid mb-3" alt="Paris">
+        <p><b>Paris</b>, the capital of France, is a world-renowned city of romance, culture, and history. Highlights include the Eiffel Tower, Louvre Museum, and charming street cafés. It’s a must-visit for fashion, food, and art lovers.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Maldives Modal -->
+<div class="modal fade" id="maldivesModal" tabindex="-1" aria-labelledby="maldivesModalLabel" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog modal-lg modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Explore Maldives</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img src="./kaviya.webpage_files/saved_resource(1)" class="img-fluid mb-3" alt="Maldives">
+        <p><b>Maldives</b> is a tropical haven of over 1,000 coral islands known for turquoise lagoons, luxury resorts, and water sports. Perfect for honeymoons and beach lovers.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Switzerland Modal -->
+<div class="modal fade" id="swissModal" tabindex="-1" aria-labelledby="swissModalLabel" aria-hidden="true" style="display: none;">
+  <div class="modal-dialog modal-lg modal-dialog-scrollable">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Explore Switzerland</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+      </div>
+      <div class="modal-body">
+        <img src="./kaviya.webpage_files/saved_resource(2)" class="img-fluid mb-3" alt="Switzerland">
+        <p><b>Switzerland</b> offers snow-capped Alps, serene lakes, and picturesque towns. Known for chocolate, scenic trains, and skiing – it’s a dream destination for nature lovers.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="./kaviya.webpage_files/bootstrap.bundle.min.js.download"></script>
+
+
+
+</body></html>
